@@ -6,7 +6,7 @@
     <title>Social Media News Feed</title>
     <style>
         body {
-            font-family: Arial, sans-serif;
+            font-family: Times New Roman, sans-serif;
             margin: 0;
             padding: 0;
             background-color: #f4f4f9;
@@ -109,6 +109,7 @@
             <p>Good Morning! Does anyone have a good salt substitute? I've been craving something salty, but I have heart issues and need to avoid salt.</p>
             <div class="actions">
                 <button onclick="toggleLike(this)">Like</button>
+                <button onclick="commment()">Comment</button>
                 <button onclick="sharePost()">Share</button>
             </div>
             <div class="comments">
@@ -116,7 +117,8 @@
                 <div class="comment" id="comment1">
                     <span>Hi John, have you tried adding garlic? Before using it, confirm with your cardiologist.</span>
                     <div class="comment-buttons">
-                        <button onclick="editComment('comment1')">Edit</button>
+                        <button onclick="likecomment('comment1')">Like</button>
+                        <button onclick="replyComment('comment1')">Reply</button>
                         <button onclick="deleteComment('comment1')">Delete</button>
                     </div>
                 </div>
@@ -136,6 +138,7 @@
             <p>What’s the best way to make gluten-free pasta at home? I’ve tried a few recipes, but they come out sticky.</p>
             <div class="actions">
                 <button onclick="toggleLike(this)">Like</button>
+                <button onclick="commment()">Comment</button>
                 <button onclick="sharePost()">Share</button>
             </div>
             <div class="comments">
@@ -143,8 +146,9 @@
                 <div class="comment" id="comment2">
                     <span>Use rice or chickpea flour and make sure your dough isn't too wet.</span>
                     <div class="comment-buttons">
-                        <button onclick="editComment('comment2')">Edit</button>
-                        <button onclick="deleteComment('comment2')">Delete</button>
+                        <button onclick="likecomment('comment1')">Like</button>
+                        <button onclick="replyComment('comment1')">Reply</button>
+                        <button onclick="deleteComment('comment1')">Delete</button>
                     </div>
                 </div>
             </div>
